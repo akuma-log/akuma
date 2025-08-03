@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-*{
-    font-family: "Outfit", sans-serif;
+@font-face {
+  font-family: myFirstFont;
+  src: url(/lucon.ttf);
+}
+
+p,a,h1,h2,h3,h4,h5,h6{
+  font-family: myFirstFont;
 }
 
 .navbar-nav { 
@@ -105,7 +109,7 @@ h1, h4, p {
   width: 100% !important;
 }
 
-.columns p {
+p {
   font-weight: 300 !important;
 }
 
@@ -133,4 +137,123 @@ h1, h4, p {
 
 .BodyImg img{
   width: 20%;
+}
+
+li {
+  padding: 5px 10px !important;
+}
+
+a.navbar-brand {
+  color: #faa500 !important;
+  font-weight: bold;
+}
+
+.navbar-collapse.justify-content-end.collapse.show {
+  margin-top: 30px;
+  text-align: center;
+}
+
+li:hover {
+  background: #0f1721;
+}
+
+li img {width: 25px !important;}
+.TablContainer {
+  background-color: #1D2A38;
+  border: 1px solid #5c5c5c;
+  width: 80%;
+  margin: auto;
+}
+
+tr {
+  color: white;
+  font-family: 'myFirstFont';
+}
+
+td a {
+  color: #faa500 !important;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+
+img.flag {
+  width: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-collapse.justify-content-end{
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+.socialMedia a {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #1D2A38;
+  border: 1px solid #717171;
+}
+table.table {
+  margin: 0px !important;
+}
+
+.bio {
+  width: 80%;
+}
+
+.socialMedia {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+a.Highlight {
+  color: #faa500 !important;
+  /* text-decoration: none; */
+}
+
+.TablContainer p {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 0px;
+  font-weight: bold !important;
+}
+
+a.button.is-primary.is-outlined {
+    border: 1px solid #faa500;
+    padding: 10px 10px;
+    display: block;
+    transition: 500ms;
+    text-decoration: none;
+}
+
+.Links {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Links a{
+  width: 100px;
+}
+
+a.button.is-primary.is-outlined:hover {
+    background: #faa500;
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+  ul.navbar-nav li {
+    gap: 20px;
+  }
 }
